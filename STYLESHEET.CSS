@@ -166,6 +166,11 @@ p.personal{
 .contact{
 	color:white;
 }
+
+p.contact{
+	font-size: 14px;
+}
+
 .telNo{
 	display:inline-block;
 	padding-left:1%;

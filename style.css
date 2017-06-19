@@ -148,19 +148,21 @@ p{
 }
 
 .telephonetooltip .telephonetooltiptext {
-     visibility: hidden;
+	visibility: hidden;
     width: 120px;
     background-color: black;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
+    padding: 5px;
     font-size: 20px;
     /* Position the tooltip */
     position: absolute;
     z-index: 40;
-    top: 40%;
-    right: 105%;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+	
 }
 .telephonetooltip:hover{
 	background-color: white;
@@ -187,7 +189,7 @@ p{
 	float: right;
     display: inline-block;
     right: 20px;
-	top: 350px;
+	top: 380px;
 	position: fixed;
 	background: transparent;
 	border-radius: 50%;
@@ -207,21 +209,20 @@ p{
 	
 }
 .emailtooltip .emailtooltiptext {
-     visibility: hidden;
+    visibility: hidden;
     width: auto;
-	padding: 5px;
     background-color: black;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-	font-size: 20px;
-    
-    
+    padding: 5px;
+    font-size: 20px;
     /* Position the tooltip */
     position: absolute;
-    z-index: 1;
-    top: 40%;
-    right: 105%;
+    z-index: 40;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
 }
 
 .emailtooltip:hover .emailtooltiptext {
@@ -237,7 +238,7 @@ p{
 	float: right;
     display: inline-block;
     right: 20px;
-	top: 500px;
+	top: 550px;
 	position: fixed;
 	background: transparent;
 	border-radius: 50%;

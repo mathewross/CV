@@ -123,12 +123,12 @@ p{
 		transition: transform 0.3s ease-in, background-color 0.3s ease-in, color 0.3s ease;
 }
 .telephone{
-	height: 100px;
+	height: 70px;
 	padding:0;
 }
 
 .email{
-	height: 100px;
+	height: 70px;
 	padding:0;
 }
 
@@ -189,7 +189,7 @@ p{
 	float: right;
     display: inline-block;
     right: 20px;
-	top: 380px;
+	top: 350px;
 	position: fixed;
 	background: transparent;
 	border-radius: 50%;
@@ -229,7 +229,7 @@ p{
     visibility: visible;
 }
 .linkedin{
-	height: 100px;
+	height: 70px;
 }
 .linkedintooltip{
     position: relative;
@@ -238,7 +238,7 @@ p{
 	float: right;
     display: inline-block;
     right: 20px;
-	top: 550px;
+	top: 520px;
 	position: fixed;
 	background: transparent;
 	border-radius: 50%;

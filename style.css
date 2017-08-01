@@ -1,0 +1,472 @@
+/* NOTE:
+ * Grid layout stuff starts at line 224. 
+ * The stuff before is just boring old CSS to make content look not crappy.
+ */
+
+/*--------------------------------------------------------------
+CSS Reset
+--------------------------------------------------------------*/
+html {
+	
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
+}
+
+body {
+	margin: 0;
+	
+}
+
+img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+@font-face {
+    font-family: OstrichSans-Black;
+    src: url(fonts/OstrichSansRounded-Medium.otf);
+}
+
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+	color: #404040;
+	font-family: 'Helvetica', Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+	margin: 0;
+	padding: 1em 0;
+}
+
+p {
+	margin: 0;
+	padding: 1em 0;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+
+/*--------------------------------------------------------------
+General styles
+--------------------------------------------------------------*/
+
+.masthead {
+  padding: 2em;
+  background: #272427;
+  background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+  text-align: center;
+}
+
+.masthead img {
+  width: 250px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid #c96;
+}
+
+.site-title {
+  margin: 1em 0 0;
+  padding: 0;
+  font-size: 1.6625em;
+ font-family: OstrichSans-Black;
+	letter-spacing: 4px;
+	font-weight: 700;
+  text-transform: uppercase;
+  color: #c96;
+}
+
+.site-description {  
+  margin: 0 0 1em;
+  padding: 0;
+  font-size: 1em;
+  font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 400;
+  color: hsla(0,0%,100%,.6);
+}
+.linkedin:hover{
+	color: #c96;
+}
+.page-title {
+  text-align: center;
+  background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+  background-color: #272427;
+  font-size: 2.8em;
+  
+}
+.page-title a{
+	 font-family: OstrichSans-Black;
+	letter-spacing: 4px;
+	color: white;
+	font-weight: 800;
+	text-decoration: none;
+}
+.page-title a:hover{
+	color: #c96;
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.6) , -1px -1px 1px rgba(0,0,0,0.67) ;
+	transition: color 0.5s, text-shadow 0.5s;
+}
+
+.main-content {
+	background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+	background: white;
+  padding: 2em;
+}
+
+.schedule-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.icon{
+	transform: rotateY(-180deg);
+    -ms-transform:rotateY(-180deg);
+    -webkit-transform:rotateY(-180deg);
+	transition: all 0.8s linear;
+	height: 80px;
+	width: auto;
+	margin-bottom: 0;
+}
+.icon:hover{
+	 transform: rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+	transition: all 0.8s linear;
+}
+.icon2{
+	height: 80px;
+	width: auto;
+	margin-bottom: 0;
+}
+.logos{
+	width: 500px;
+	margin-left: 0;
+	padding-left: 0;
+}
+.procedelogos{
+	width: 200px;
+	margin: auto;
+}
+.logosEtech{
+	width: 400px;
+	margin-left: 0;
+	padding-left: 0;
+}
+.schedule-list li {
+  margin: .5em 0;
+  padding: 1em 0;
+  border-bottom: 1px dotted black;
+}
+
+.schedule-list li:last-child {
+  border-bottom: none;
+}
+
+.talk-title {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3em;
+}
+
+.talk-speaker {
+  margin: .5em 0;
+  padding: 0;
+}
+
+.talk-time {
+  margin: .5em 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.sidebar {
+  background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+  background: #272427;
+}
+.info {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  color: #272427;
+  background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+    
+}
+.info li {
+  padding: 1em;
+  text-align: center;
+  margin: 0;
+  background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+}
+.info-heading{
+	font-family: OstrichSans-Black;
+	letter-spacing: 4px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.contactimg{
+	width: 80px;
+	text-align: center;
+	margin-left: 43%;
+	padding: 0;
+}
+.skills-heading{
+  text-align: center;
+	  font-family: calibri;
+	
+	  color: white;
+}
+#timelineHeader{
+	font-family: OstrichSans-Black;
+	letter-spacing: 4px;
+	font-weight: 1000;
+	font-size: 1.7em;
+	text-align: center;
+}
+
+.ally{
+		text-align: center;
+	  font-family: calibri;
+	  font-size: 1.4em;
+	  background-color: #e8ea83;
+	  color: black;
+	  
+	  
+	}
+.home{
+	background: white;
+	color: #272427;
+}
+.coc {
+  background: #e7ab46;
+  
+}
+.black {
+	background: #272427;
+	color: white;
+	background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+}
+.white{
+	background: white;
+	color: #272427;
+	background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+}
+.yellow{
+	font-size: 1.8em;
+	color: #cc9966;
+
+}
+
+.contact {
+  background: #68470d;
+}
+.red{
+	background: #e8ea83;
+	
+}
+.faq {
+  background: #cc9966;
+}
+
+.colophon {
+	padding: 1em 2em;
+  background: #272427;
+  background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+	color: white;
+}
+aside{
+	background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+}
+
+.skills {
+	
+  background: #272427;
+	color: white;
+	background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+}
+
+.colophon a {
+	color: white;
+}
+
+.colophon a:hover,
+.colophon a:focus {
+	border-bottom: 1px solid white;
+}
+.left-button{
+		margin-left: 45%;
+	}
+.green{
+	color: green;
+}
+/*--------------------------------------------------------------
+If no grid support, limit width to 50em and center align
+--------------------------------------------------------------*/
+@supports not (display: grid) {
+	.page-title,
+  .main-content,
+  .sidebar,
+  .skills  {
+		max-width: 50em;
+		margin: 0 auto;
+	}
+}
+
+/*--------------------------------------------------------------
+CSS Grid layout for wider screens, when browser supports grid:
+--------------------------------------------------------------*/
+
+@supports (display: grid) {
+  @media screen and (min-width: 800px) {
+    
+  	.site {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto 3fr;
+      grid-template-areas:
+        "content-head content-head"
+        "main header"
+        "main skills"
+		"main sidebar"
+        "footer footer";
+		}
+    
+    .masthead {
+      grid-area: header;
+    }
+    
+    .page-title {
+      grid-area: content-head;
+    }
+    
+    .main-content {
+      grid-area: main;
+    }
+    
+    .sidebar {
+      grid-area: sidebar;
+    }
+		
+    .colophon {
+      grid-area: footer;
+    }
+	.skills{
+	  grid-area: skills;
+	}
+	.ally{
+		text-align: center;
+	  font-family: calibri;
+	  font-size: 1.4em;
+	  background-color: #e8ea83;
+	  color: black;
+	  
+	}
+	
+    
+	}
+  
+  @media screen and (min-width: 1200px) {
+    .site {
+			grid-template-columns: 2fr 1fr 1fr;
+      grid-template-areas:
+        "content-head content-head content-head"
+        "main header header"
+        "main skills sidebar"
+		"footer skills sidebar";
+		}
+	.contactimg{
+		margin-left: 40%;
+	}
+	.skills-heading{
+	  text-align: center;
+	  font-family: calibri;
+	  font-size: 1.4em;
+	  font-weight: 900;
+	  color: white;
+	  border-right: 1px solid black;
+	}
+	.ally{
+		text-align: center;
+	  font-family: calibri;
+	  font-size: 1.4em;
+	  background-color: #e8ea83;
+	  color: black;
+	  
+	}
+	.skills ul li{
+		border-right: 1px solid black;
+		border-left: 1px solid black;
+		}
+	.logos{
+		width: 500px;
+		margin: auto;
+		
+	}
+	.logosEtech{
+		width: 300px;
+		margin: auto;
+	}
+	.mySlides{
+		
+		text-align: center;
+	}
+	.left-button{
+		margin-left: 48%;
+	}
+	.page-title{
+		border-bottom: 2px black solid;
+	}
+	.masthead{
+		border-bottom: 1px black solid;
+	}
+	.sidebar{
+		background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+	}
+  }
+}

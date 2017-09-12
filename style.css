@@ -99,7 +99,7 @@ General styles
 .masthead {
   padding: 2em;
   background: #272427;
-  background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+  
   text-align: center;
 }
 
@@ -134,16 +134,16 @@ General styles
 }
 .page-title {
   text-align: center;
-  background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+  
   background-color: #272427;
   font-size: 2.8em;
   
 }
 .page-title a{
-	 font-family: OstrichSans-Black;
-	letter-spacing: 4px;
+	font-family: helvetica;
+	
 	color: white;
-	font-weight: 800;
+	
 	text-decoration: none;
 }
 .page-title a:hover{
@@ -153,7 +153,7 @@ General styles
 }
 
 .main-content {
-	background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+	
 	background: white;
   padding: 2em;
 }
@@ -225,7 +225,7 @@ General styles
 }
 
 .sidebar {
-  background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+  
   background: #272427;
 }
 .info {
@@ -233,14 +233,14 @@ General styles
   padding: 0;
   list-style-type: none;
   color: #272427;
-  background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+  
     
 }
 .info li {
   padding: 1em;
   text-align: center;
   margin: 0;
-  background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+  
 }
 .info-heading{
 	font-family: OstrichSans-Black;
@@ -290,15 +290,15 @@ General styles
 .black {
 	background: #272427;
 	color: white;
-	background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+	
 }
 .white{
 	background: white;
 	color: #272427;
-	background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+	
 }
 .yellow{
-	font-size: 1.8em;
+	font-size: 1.1em;
 	color: #cc9966;
 
 }
@@ -317,18 +317,18 @@ General styles
 .colophon {
 	padding: 1em 2em;
   background: #272427;
-  background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+  
 	color: white;
 }
 aside{
-	background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+	
 }
 
 .skills {
 	
   background: #272427;
 	color: white;
-	background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+	
 }
 
 .colophon a {
@@ -466,7 +466,7 @@ CSS Grid layout for wider screens, when browser supports grid:
 		border-bottom: 1px black solid;
 	}
 	.sidebar{
-		background-image: url(https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png);
+		
 	}
   }
 }
